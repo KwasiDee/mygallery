@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Upload</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #ffd700;">Upload Your Photos</h1>
+        <div class="upload-container">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" accept="image/*" multiple>
+                <button type="submit">Upload</button>
+            </form>
+            <div id="imagePreview"></div>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Scroll Buttons -->
+    <button id="scrollTopBtn" class="scroll-btn">⬆</button>
+    <button id="scrollBottomBtn" class="scroll-btn">⬇</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
